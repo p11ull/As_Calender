@@ -6,26 +6,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Work Day Scheduler</title>
+
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>Amarjits Work Day Scheduler</title>
 </head>
 
 <body>
   <header>
-    <h1 class="display-3">Work Day Scheduler</h1>
+    <h1 class="display-3">Your Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-    <!-- Timeblocks go here -->
+    <div class="individualrow">
+      <div class="timebox">7AM</div>
+      <input id="7" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`7`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">8AM</div>
+      <input id="8" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`8`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">9AM</div>
+      <input id="9" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`9`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">10AM</div>
+      <input id="10" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`10`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">11AM</div>
+      <input id="11" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`11`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">12PM</div>
+      <input id="12" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`12`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">1PM</div>
+      <input id="13" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`13`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">2PM</div>
+      <input id="14" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`14`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">3PM</div>
+      <input id="15" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`15`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">4PM</div>
+      <input id="16" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`16`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">5PM</div>
+      <input id="17" type="text" class="activitybox"></input>
+      <button onclick="activitySave(`17`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
+    <div class="individualrow">
+      <div class="timebox">6PM</div>
+      <input id="18" class="activitybox"></input>
+      <button onclick="activitySave(`18`)" class="saveBtn" type="button"><span><img src="assets/Save Icon.png" /></span></button>
+    </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Script for the jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Script for the jquery ui -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <!-- Script for day js -->
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <!-- Script tag for my custom js -->
+  <script src=./assets/script.js></script>
 </body>
 
 </html>
