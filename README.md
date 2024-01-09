@@ -35,6 +35,7 @@ Alt text
 [https://github.com/p11ull/Console-Finances.git](https://github.com/p11ull/As_Calender)
 
 [https://github.com/p11ull/Console-Finances](https://p11ull.github.io/As_Calender/)
+![image](https://github.com/p11ull/As_Calender/assets/150047879/2e9548cf-2739-45dd-b7b0-d20c2caff2c0)
 
 Credits
 Collaborators on this project included instructional staff.
